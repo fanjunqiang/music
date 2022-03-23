@@ -331,7 +331,7 @@ export default {
     }
   }
   .black {
-    width: 60px;
+    // width: 60px;
     height: 30px;
     margin: 10px;
     // background-color: rgba(211, 189, 189, 0.5);
@@ -339,11 +339,15 @@ export default {
     color: #fff;
     line-height: 30px;
     position: relative;
+    img{
+      position: absolute;
+      left:10px;
+    }
     .geming {
       position: absolute;
       left: 50%;
       top: 0;
-      transform: translateX(18%);
+      transform: translateX(-50%);
       width: 300px;
       background: linear-gradient(to right, orange, aqua, red);
       -webkit-background-clip: text; //规定背景的绘制区域为文字
@@ -355,10 +359,14 @@ export default {
     }
   }
   .body {
+    width: 250px;
+        // height: 250px;
+        margin: 0 auto;
+    // width: max-content;
     position: relative;
     .zheng {
       position: absolute;
-      left: 86%;
+      left: 110%;
       top: 0px;
       transform: rotate(20deg);
       transform-origin: 10px 10px;
@@ -374,11 +382,11 @@ export default {
     }
     .mid {
       .gedie {
-        width: 250px;
-        height: 250px;
-        border-radius: 125px;
+        width: 200px;
+        height: 200px;
+        border-radius: 120px;
         animation: zhuan 10s linear infinite;
-        border: 4px solid transparent;
+        border: 20px solid transparent;
         background: linear-gradient(to right, orange, aqua, red);
         -webkit-background-clip: border; //规定背景的绘制区域为文字
       }
@@ -400,12 +408,15 @@ export default {
       }
       span {
         position: absolute;
-        right: -15px;
+        right: -25px;
         top: 5px;
       }
     }
     .hh {
-      position: relative;
+      // position: relative;
+      position: absolute;
+      left:50%;
+      transform: translateX(-50%);
       margin: 30px 0 0 0;
       width: 100vw;
       height: 200px;
