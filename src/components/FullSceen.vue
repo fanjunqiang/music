@@ -21,6 +21,7 @@
           :src="songs.picUrl || songs.al.picUrl"
           :style="{ animationPlayState: b ? 'running' : 'paused' }"
         />
+        <img src="../assets/disc.png" alt="" class="bg1">
       </div>
       <!-- 音量，控制audio的volume属性的值（0~1） -->
       <div class="yinliang">
@@ -381,20 +382,31 @@ export default {
       animation-name: zhenghui;
     }
     .mid {
+      position: relative;
       .gedie {
         width: 200px;
         height: 200px;
-        border-radius: 120px;
+        border-radius: 135px;
         animation: zhuan 10s linear infinite;
-        border: 20px solid transparent;
-        background: linear-gradient(to right, orange, aqua, red);
-        -webkit-background-clip: border; //规定背景的绘制区域为文字
+        // background:url(../assets/disc.png);
+        border: 35px solid transparent;
+        // background: linear-gradient(to right, orange, aqua, red);
+        // -webkit-background-clip: border; //规定背景的绘制区域为文字
+      }
+      .bg1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:-1;
+        width: 270px;
+        height: 270px;
+        border-radius: 135px;
       }
     }
     .yinliang {
       position: absolute;
       right: 50%;
-      top: 260px;
+      top: 265px;
       transform: translateX(50%);
       input {
         height: 3px;
